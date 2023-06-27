@@ -9,7 +9,11 @@ const sec3 = document.querySelector(".sec3");
 
 //funcion para arrancar con el carrusel
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel();
+  $(".owl-carousel").owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 5000,
+    loop: true,
+  });
 });
 
 //Función para poner o quitar la clase active (El color amarillo de fondo en los botones)
