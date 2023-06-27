@@ -1,0 +1,315 @@
+.secMain {
+  padding: 30px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__secMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .buttons {
+      padding: 10px 50px;
+      display: flex;
+      gap: 10px;
+      button {
+        background: transparent;
+        font-family: $boldFont;
+        color: $green;
+        border: none;
+        font-size: 1rem;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: $yellow;
+          transition: 0.5s;
+        }
+      }
+      .active {
+        background-color: $yellow;
+        transition: 0.5s;
+      }
+    }
+    .rectangle {
+      width: 100%;
+      height: 1px;
+      background-color: $grayOpacity1;
+    }
+  }
+  &__info {
+    padding: 0 10%;
+    .sec1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 5%;
+      p {
+        text-align: justify;
+      }
+      h2 {
+        color: $green;
+        font-size: 30px;
+      }
+      iframe {
+        width: 500px;
+        height: 300px;
+      }
+      h3 {
+        align-self: self-start;
+      }
+      &__parrafos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p {
+          font-size: 1rem;
+          text-align: justify;
+        }
+      }
+      &__iconsInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-self: self-start;
+        div {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          .iconCircle {
+            width: 10px;
+            height: 10px;
+          }
+          p {
+            span {
+              font-size: 1rem;
+              color: black;
+              font-family: $boldFont;
+            }
+          }
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .sec2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 5%;
+      h2 {
+        font-size: 30px;
+        color: $green;
+      }
+      &__parrafos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p {
+          font-size: 1rem;
+          text-align: justify;
+        }
+      }
+
+      figure {
+        width: 250px;
+        height: 100px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      button {
+        background: $yellow;
+        border: none;
+        padding: 10px 15px;
+        font-family: $boldFont;
+        color: $green;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover {
+          background: none;
+          transition: 0.5s;
+        }
+        a {
+          color: $green;
+          font-size: 1rem;
+          transition: 0.5s;
+          &:hover {
+            color: black;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+    .sec3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      h2 {
+        font-size: 30px;
+        color: $green;
+      }
+      &__parrafos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: justify;
+        p {
+          font-size: 1rem;
+        }
+      }
+      h4 {
+        font-size: 1rem;
+        align-self: self-start;
+        color: $green;
+      }
+      &__icons {
+        width: 100%;
+        display: flex;
+        gap: 50px;
+        .seccion1Icons {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          width: 50%;
+
+          .iconInfo {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .iconCircle {
+              width: 10px;
+              height: 10px;
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+              object-fit: cover;
+            }
+            div {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              h3 {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+        .seccion2Icons {
+          @extend .seccion1Icons;
+          .iconInfo {
+            @extend .iconInfo;
+          }
+        }
+      }
+      &__infoEnd {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        p {
+          text-align: justify;
+          font-size: 1rem;
+        }
+        h3 {
+          font-size: 1rem;
+          color: $green;
+        }
+        .secResumen {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .iconCircle {
+              width: 10px;
+              height: 10px;
+            }
+            border-bottom: 2px dotted black;
+            padding-bottom: 10px;
+          }
+        }
+      }
+      button {
+        margin-top: 30px;
+        background: $yellow;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 15px;
+        font-family: $boldFont;
+        width: 300px;
+        align-self: center;
+        cursor: pointer;
+        transition: 0.5s;
+        border: 2px solid $yellow;
+        &:hover {
+          background: transparent;
+          transition: 0.5s;
+        }
+        a {
+          color: $green;
+          font-size: 1rem;
+          transition: 0.5s;
+          &:hover {
+            color: black;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+  &__secRedes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10%;
+    a {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  &__Patrocinadores {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    h3 {
+      font-size: 30px;
+      color: $green;
+    }
+
+    .owl-carousel .owl-stage {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .secMain {
+    &__info {
+      .sec1 {
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

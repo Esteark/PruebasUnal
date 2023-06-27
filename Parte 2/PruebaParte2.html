@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+
+  <!--ESTILOS-->
+  <style>
+    header {
+      width: 100%;
+      height: auto;
+    }
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    footer {
+      width: 100%;
+      height: auto;
+    }
+    footer img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .secBanner {
+      width: 100%;
+      height: auto;
+      padding: 0 10%;
+    }
+    .secBanner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <!--ENCABEZADO-->
+    <header>
+      <img
+        src="https://minas.medellin.unal.edu.co/images/prueba-aux/Encabezado.png"
+        alt="Encabezado"
+        class="img-responsive ancho"
+      />
+    </header>
+    <section class="secBanner">
+      <img
+        src="https://minas.medellin.unal.edu.co/images/SIPMN/IV-SIMPM_Identidad_en_RRSS_Banner_LINKEDIN.png"
+        alt=""
+      />
+    </section>
+
+    <!--CONTENIDO-->
+    <main class="secMain">
+      <section class="secMain__secMenu">
+        <article class="buttons">
+          <button id="btnDes">Descripción del evento</button>
+          <button id="btnFa">La facultad</button>
+          <button id="btnPos">Postulación</button>
+        </article>
+        <div class="rectangle"></div>
+      </section>
+      <section class="secMain__info">
+        <!-- Seccion 1  -->
+        <article class="sec1" id="sec1">
+          <h2>IV Seminario Internacional de Minería y Planteamiento Minero</h2>
+          <iframe
+            src="https://www.youtube.com/embed/8DOWDIF_SCY"
+            allowfullscreen
+          ></iframe>
+          <p>
+            El sector minero se enfrenta día a día a nuevos retos técnicos,
+            científicos y socio-ambientales en el aprovechamiento óptimo y
+            sostenible de los recursos minerales, necesarios para el desarrollo
+            de la sociedad. Debido a esto, se requiere la actualización de
+            conocimientos con profesionales expertos tanto de la academia como
+            de la industria. Es por tanto que el Grupo de Planeamiento Minero
+            GIPLAMIN, presenta el IV Seminario Internacional de Minería y
+            Planeamiento Minero (IV SIMPM 2023), un espacio idóneo para discutir
+            los avances más recientes en el sector de Minero.
+          </p>
+          <h3>Estos son nuestros propósitos:</h3>
+          <article class="sec1__parrafos">
+            <p>
+              - Profundizar en metodologías y nuevos conocimientos en el área de
+              la tecnología y de servicios como aporte significativo al
+              crecimiento y desarrollo de la minería en Latinoamérica.
+            </p>
+            <p>
+              - Proporcionar un espacio que motive la cercanía entre la academia
+              y la industria; propósito que además busca para ambos sectores una
+              constante retroalimentación que garantice mejores prácticas
+              mineras.
+            </p>
+            <p>
+              - Reunir académicos, investigadores, empresas y docentes en torno
+              a la realidad de la minería, y orientados por la experiencia y
+              bases científicas, resaltar soluciones y oportunidades de mejora
+              que permitan maximizar resultados, disminuir factores de riesgo y
+              optimizar labores y procesos.
+            </p>
+          </article>
+          <article class="sec1__iconsInfo">
+            <div>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                class="iconCircle"
+              />
+              <img
+                src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/iconos/Fecha.png"
+                alt=""
+              />
+              <p>
+                <span>Fecha del evento : </span> 16 y 17 de noviembre de 2023
+              </p>
+            </div>
+            <div>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                class="iconCircle"
+              />
+              <img
+                src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/iconos/Idioma.png"
+                alt=""
+              />
+              <p>
+                <span> Idiomas del evento : </span> 16 y 17 de noviembre de 2023
+              </p>
+            </div>
+            <div>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                class="iconCircle"
+              />
+              <img
+                src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/iconos/Contacto.png"
+                alt=""
+              />
+              <p>
+                <span> Contacto del evento : </span> Jane Doe. - Coordinadora.
+              </p>
+            </div>
+          </article>
+        </article>
+        <!-- Termina Seccion 1  -->
+        <!-- Seccion 2 -->
+        <article class="sec2 hidden" id="sec2">
+          <h2>La Facultad</h2>
+          <article class="sec2__parrafos">
+            <p>
+              La Facultad de Minas de la Universidad Nacional de Colombia Sede
+              Medellín es una de las más prestigiosas instituciones de formación
+              en ingeniería del país, desde su creación y hasta hoy, ha tenido
+              una fuerte participación en la actividad social, cultural,
+              económica colombiana, específicamente en el área de ingeniería.
+            </p>
+            <p>
+              En la actualidad, de cara a los grandes avances de la ciencia y la
+              tecnología, la institución ha tenido una importante transformación
+              que la ha consolidado como una entidad de investigación con la
+              capacidad de afrontar y aportar al fortalecimiento de la
+              plataforma de competitividad del país. Actualmente, cuenta con un
+              número destacado de profesores investigadores altamente
+              cualificados.
+            </p>
+            <p>
+              La Facultad de Minas hace parte de la Universidad líder en la
+              formación en educación superior de Colombia. Por eso para los
+              interesados en cualquiera de los programas o servicios, por las
+              amplias capacidades de la institución, tienen garantizados la
+              calidad y el capital humano idóneo.
+            </p>
+          </article>
+          <figure>
+            <img
+              src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/LOGOSIMBOLO_LATERAL_NEGRO.png"
+              alt=""
+            />
+          </figure>
+          <button>
+            <a href="https://minas.medellin.unal.edu.co" target="_blank"
+              >Página web</a
+            >
+          </button>
+        </article>
+        <!-- Termina Seccion 2  -->
+        <!-- Seccion 3  -->
+        <article class="sec3 hidden" id="sec3">
+          <h2>Postulación de Resúmenes</h2>
+          <section class="sec3__parrafos">
+            <p>
+              ¡Participa como ponente en nuestro IV Seminario Internacional de
+              minería y planificación minera!
+            </p>
+            <p>
+              Este evento, que se llevará a cabo en el Hotel Intercontinental de
+              la ciudad de Medellín - Colombia, los días 16 y 17 de noviembre
+              del presente año; reunirá a expertos de la industria minera y a
+              representantes de empresas líderes en el sector para discutir los
+              últimos avances en tecnología minera, así como las mejores
+              prácticas en planificación minera y estrategias para mejorar la
+              eficiencia y la sostenibilidad de la industria.
+            </p>
+          </section>
+          <h4>Los ejes temáticos de este seminario incluyen:</h4>
+          <section class="sec3__icons">
+            <article class="seccion1Icons">
+              <section class="iconInfo">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <div>
+                  <img
+                    src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/1-Exploracin.png"
+                    alt=""
+                  />
+                  <h3>Exploración</h3>
+                </div>
+              </section>
+              <section class="iconInfo">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <div>
+                  <img
+                    src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/2-Minera_40.png"
+                    alt=""
+                  />
+                  <h3>Minería 4.0</h3>
+                </div>
+              </section>
+              <section class="iconInfo">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <div>
+                  <img
+                    src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/3-Transicin_Energtica.png"
+                    alt=""
+                  />
+                  <h3>Transición Energética</h3>
+                </div>
+              </section>
+              <section class="iconInfo">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <div>
+                  <img
+                    src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/4-Operaciones_Unitarias.png"
+                    alt=""
+                  />
+                  <h3>Operaciones Unitarias</h3>
+                </div>
+              </section>
+              <section class="iconInfo">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <div>
+                  <img
+                    src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/5-Comunidades_y_Medio_Ambiente.png"
+                    alt=""
+                  />
+                  <h3>Comunidades y Medio Ambiente</h3>
+                </div>
+              </section>
+            </article>
+            <article class="seccion2Icons">
+              <section class="iconInfo">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <div>
+                  <img
+                    src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/6-Planemiento_Minero.png"
+                    alt=""
+                  />
+                  <h3>Planeamiento Minero</h3>
+                </div>
+              </section>
+              <section class="iconInfo">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <div>
+                  <img
+                    src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/7-Optimizacin_Minera.png"
+                    alt=""
+                  />
+                  <h3>Optimización Minera</h3>
+                </div>
+              </section>
+              <section class="iconInfo">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <div>
+                  <img
+                    src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/8-Economia_Circular.png"
+                    alt=""
+                  />
+                  <h3>Economía Circular</h3>
+                </div>
+              </section>
+              <section class="iconInfo">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <div>
+                  <img
+                    src="https://minas.medellin.unal.edu.co/images/SIPMN/recursos/9-Cierre_Minero.png"
+                    alt=""
+                  />
+                  <h3>Cierre Minero</h3>
+                </div>
+              </section>
+            </article>
+          </section>
+          <section class="sec3__infoEnd">
+            <p>
+              Si eres un experto en alguno de estos temas, te invitamos a
+              presentar un resumen para que nuestro comité académico lo revise y
+              puedas ser parte de nuestro seminario bajo la modalidad de Ponente
+              o Póster (Pregrado). Esta es una oportunidad única para compartir
+              tus conocimientos con otros profesionales de la industria y para
+              aumentar tu visibilidad en el sector.
+            </p>
+            <h3>Los resúmenes deben incluir:</h3>
+            <article class="secResumen">
+              <div>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <p>Título, nombre y apellidos del o los autores</p>
+              </div>
+              <div>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <p>Filiación institucional y correo(s)</p>
+              </div>
+              <div>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAktJREFUSEvFlr1v02AQxp+z2zguqmKjglTEH8DUiQmBVBhATCW2kKCsdGJBjCCkCqmMnZgoaz8kcEIXEAsggUBCTJmQWFEqQVUnVBAnjX3obTHEsZ3Ybdx49Pve/e7O57uHMKSHhsRFKjDPQ3Km9DNg75QE6TjAMhNtgbyv29Lox2Mzm9tJE0kE3lnXzrddniOQAUCJc06E5wx6nC/aL/sF0BPM1sRki9xFBl/r5yhwzrA8SLfHzK1vsUHGHTSeatMkYxnAiVTQ/5c3mDCrFmtvo+wjM/4LfQUgt0+ob9ZiF5fUq2F4CCzK61D7M+0/0+5YqwqPnCZzc6PzIARulgqrDEr3TfuUhUBrimFfjwWL7nVdvD5geSPNZRkXRmdqb/zDQMaNUmGFQIHIBhUEg1dVoz4bAovh0JrSfzE4PyhYl5+mUqmN0Tw88f5fxo2SfpbA7zKC7rpl0DnVsN8HwVbhJhEtZQpmnlPN+pMAuGnpd5l4IUswMd1TTPthF1i7z4QHhw52SvotgB9lCeaoUjvlwkUwiTGZ2RPZXD/WJ8bH3fbPrKgEcnIV+0jodxLAZlkrM+NKFvDYASJgTlm/DOYXWYB7jsxduKU9A8EcJJzAa4pRj18SAvbbOnpSIu8TgMlBwBmo5pOsRQFrlLVpYhyuEPCzFCoEMpYPIAiq7OJGlPoITK6osu6JvZ3FtMJALP4cy3e6VUcnI5W8lSAVe6zNJoNLIzItdS78uD5JBPaNw4Ie8OB9B0lf8hX7gz8ckjRlKnASh0nvDA38B6Uz5h9BxuNgAAAAAElFTkSuQmCC"
+                  class="iconCircle"
+                />
+                <p>El resumen debe ser máximo de 300 palabras</p>
+              </div>
+            </article>
+            <button>
+              <a
+                href="https://minas.medellin.unal.edu.co/images/comunicaciones/plantillas-graficas-2022/plantilla-solo_texto-opcion-1.pptx
+"
+                download
+                >Descargar el siguiente documento</a
+              >
+            </button>
+          </section>
+        </article>
+        <!-- Termina Seccion 3 -->
+      </section>
+      <article class="secMain__secRedes">
+        <a href="https://www.facebook.com/fminas" target="_blank">
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/redes/facebook.png"
+            alt=""
+        /></a>
+        <a href="https://www.instagram.com/minasmedellinunal/" target="_blank">
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/redes/instagram.png"
+            alt=""
+        /></a>
+        <a href="https://twitter.com/fminas" target="_blank">
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/redes/twitter.png"
+            alt=""
+        /></a>
+        <a href="www.linkedin.com/company/fminas/" target="_blank">
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/redes/linkedin.png"
+            alt=""
+        /></a>
+        <a href="https://minas.medellin.unal.edu.co/" target="_blank">
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/redes/web.png"
+            alt=""
+        /></a>
+        <a href="https://www.youtube.com/c/FacultaddeMinasUNAL" target="_blank">
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/redes/whatsapp.png"
+            alt=""
+        /></a>
+      </article>
+      <article class="secMain__Patrocinadores">
+        <h3>Nuestros Patrocinadores</h3>
+        <section class="owl-carousel">
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/Deswik_Logo_Horz_CMYK.png
+"
+            alt=""
+            class="item"
+          />
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/Aplicacion_logo_ZijinCG_Sobre_blanco.png"
+            alt=""
+          />
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/Hexagon.png"
+            alt=""
+             class="item"
+          />
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/onix_V1.png"
+            alt=""
+             class="item"
+          />
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/CM_Logo_Formatos_2021_V2.png"
+            alt=""
+             class="item"
+          />
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/DrummondLTDOriginal.png"
+            alt=""
+             class="item"
+          />
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/ArisMiningLogo.png"
+            alt=""
+             class="item"
+          />
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/Cordoba_Logo_Horz_2021.png"
+            alt=""
+             class="item"
+          />
+          <img
+            src="https://minas.medellin.unal.edu.co/images/SIPMN/empresas/minerosedit.png"
+            alt=""
+             class="item"
+          />
+        </s>
+      </article>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+      <img
+        src="https://minas.medellin.unal.edu.co/images/prueba-aux/Footer.png"
+        alt="Encabezado"
+        class="img-responsive ancho"
+      />
+    </footer>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="./js/main.js" type="text/javascript"></script>
+  </body>
+</html>

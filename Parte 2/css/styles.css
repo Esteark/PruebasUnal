@@ -1,0 +1,369 @@
+/*Fuentes*/
+@font-face {
+  font-family: "AncizarSans Regular";
+  src: url(../fonts/AncizarSans-Regular.otf);
+}
+@font-face {
+  font-family: "AncizarSans Bold";
+  src: url(../fonts/AncizarSans-Bold.otf);
+}
+@font-face {
+  font-family: "AncizarSans Bold Italic";
+  src: url(../fonts/AncizarSans-ExtraboldItalic.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("https://minas.medellin.unal.edu.co/images/SIPMN/fondo-transp.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2 {
+  font-family: "AncizarSans Bold", sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "AncizarSans Regular", sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.secMain {
+  padding: 30px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.secMain__secMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.secMain__secMenu .buttons {
+  padding: 10px 50px;
+  display: flex;
+  gap: 10px;
+}
+.secMain__secMenu .buttons button {
+  background: transparent;
+  font-family: "AncizarSans Bold", sans-serif;
+  color: #006250;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.secMain__secMenu .buttons button:hover {
+  background-color: #f8ae10;
+  transition: 0.5s;
+}
+.secMain__secMenu .buttons .active {
+  background-color: #f8ae10;
+  transition: 0.5s;
+}
+.secMain__secMenu .rectangle {
+  width: 100%;
+  height: 1px;
+  background-color: #5a5b5a;
+}
+.secMain__info {
+  padding: 0 10%;
+}
+.secMain__info .sec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 5%;
+}
+.secMain__info .sec1 p {
+  text-align: justify;
+}
+.secMain__info .sec1 h2 {
+  color: #006250;
+  font-size: 30px;
+}
+.secMain__info .sec1 iframe {
+  width: 500px;
+  height: 300px;
+}
+.secMain__info .sec1 h3 {
+  align-self: self-start;
+}
+.secMain__info .sec1__parrafos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.secMain__info .sec1__parrafos p {
+  font-size: 1rem;
+  text-align: justify;
+}
+.secMain__info .sec1__iconsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: self-start;
+}
+.secMain__info .sec1__iconsInfo div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.secMain__info .sec1__iconsInfo div .iconCircle {
+  width: 10px;
+  height: 10px;
+}
+.secMain__info .sec1__iconsInfo div p span {
+  font-size: 1rem;
+  color: black;
+  font-family: "AncizarSans Bold", sans-serif;
+}
+.secMain__info .sec1__iconsInfo div img {
+  width: 30px;
+  height: 30px;
+}
+.secMain__info .sec2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 5%;
+}
+.secMain__info .sec2 h2 {
+  font-size: 30px;
+  color: #006250;
+}
+.secMain__info .sec2__parrafos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.secMain__info .sec2__parrafos p {
+  font-size: 1rem;
+  text-align: justify;
+}
+.secMain__info .sec2 figure {
+  width: 250px;
+  height: 100px;
+}
+.secMain__info .sec2 figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.secMain__info .sec2 button {
+  background: #f8ae10;
+  border: none;
+  padding: 10px 15px;
+  font-family: "AncizarSans Bold", sans-serif;
+  color: #006250;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.secMain__info .sec2 button:hover {
+  background: none;
+  transition: 0.5s;
+}
+.secMain__info .sec2 button a {
+  color: #006250;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+.secMain__info .sec2 button a:hover {
+  color: black;
+  transition: 0.5s;
+}
+.secMain__info .sec3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.secMain__info .sec3 h2 {
+  font-size: 30px;
+  color: #006250;
+}
+.secMain__info .sec3__parrafos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+}
+.secMain__info .sec3__parrafos p {
+  font-size: 1rem;
+}
+.secMain__info .sec3 h4 {
+  font-size: 1rem;
+  align-self: self-start;
+  color: #006250;
+}
+.secMain__info .sec3__icons {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+.secMain__info .sec3__icons .seccion1Icons, .secMain__info .sec3__icons .seccion2Icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.secMain__info .sec3__icons .seccion1Icons .iconInfo, .secMain__info .sec3__icons .seccion2Icons .iconInfo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.secMain__info .sec3__icons .seccion1Icons .iconInfo .iconCircle, .secMain__info .sec3__icons .seccion2Icons .iconInfo .iconCircle {
+  width: 10px;
+  height: 10px;
+}
+.secMain__info .sec3__icons .seccion1Icons .iconInfo img, .secMain__info .sec3__icons .seccion2Icons .iconInfo img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.secMain__info .sec3__icons .seccion1Icons .iconInfo div, .secMain__info .sec3__icons .seccion2Icons .iconInfo div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.secMain__info .sec3__icons .seccion1Icons .iconInfo div h3, .secMain__info .sec3__icons .seccion2Icons .iconInfo div h3 {
+  font-size: 1rem;
+}
+.secMain__info .sec3__infoEnd {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+.secMain__info .sec3__infoEnd p {
+  text-align: justify;
+  font-size: 1rem;
+}
+.secMain__info .sec3__infoEnd h3 {
+  font-size: 1rem;
+  color: #006250;
+}
+.secMain__info .sec3__infoEnd .secResumen {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.secMain__info .sec3__infoEnd .secResumen div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 2px dotted black;
+  padding-bottom: 10px;
+}
+.secMain__info .sec3__infoEnd .secResumen div .iconCircle {
+  width: 10px;
+  height: 10px;
+}
+.secMain__info .sec3 button {
+  margin-top: 30px;
+  background: #f8ae10;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-family: "AncizarSans Bold", sans-serif;
+  width: 300px;
+  align-self: center;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 2px solid #f8ae10;
+}
+.secMain__info .sec3 button:hover {
+  background: transparent;
+  transition: 0.5s;
+}
+.secMain__info .sec3 button a {
+  color: #006250;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+.secMain__info .sec3 button a:hover {
+  color: black;
+  transition: 0.5s;
+}
+.secMain__secRedes {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 10%;
+}
+.secMain__secRedes a img {
+  width: 40px;
+  height: 40px;
+}
+.secMain__Patrocinadores {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.secMain__Patrocinadores h3 {
+  font-size: 30px;
+  color: #006250;
+}
+.secMain__Patrocinadores .owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .secMain__info .sec1 iframe {
+    width: 100%;
+  }
+}
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,125 @@
+/*Fuentes*/
+@font-face {
+  font-family: "AncizarSans Regular";
+  src: url(../fonts/AncizarSans-Regular.otf);
+}
+@font-face {
+  font-family: "AncizarSans Bold";
+  src: url(../fonts/AncizarSans-Bold.otf);
+}
+@font-face {
+  font-family: "AncizarSans Bold Italic";
+  src: url(../fonts/AncizarSans-ExtraboldItalic.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+h1,
+h2 {
+  font-family: "AncizarSans Bold", sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "AncizarSans Regular", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+}
+.navbar img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+}
+footer img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.secBanner {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+.secBanner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secMain {
+  padding: 50px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.secMain__title {
+  color: #f8ae10;
+  text-align: center;
+}
+.secMain__info {
+  display: flex;
+  gap: 5px;
+}
+.secMain__info p {
+  width: 50%;
+  font-size: 30px;
+  height: auto;
+}
+.secMain__info iframe {
+  width: 50%;
+  height: auto;
+}
+.secMain__button {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #f8ae10;
+  border-radius: 60px;
+  border: none;
+  font-family: "AncizarSans Bold Italic", sans-serif;
+  font-size: 2rem;
+}
+.secMain__button a {
+  color: #3e3e3e;
+}
+
+@media (max-width: 767.98px) {
+  .secMain {
+    gap: 30px;
+  }
+  .secMain__info {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .secMain__info p {
+    width: 100%;
+    font-size: 20px;
+  }
+  .secMain__info iframe {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

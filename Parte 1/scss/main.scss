@@ -1,0 +1,42 @@
+/*Fuentes*/
+//Version light de la fuente
+@font-face {
+  font-family: "AncizarSans Regular";
+  src: url(../fonts/AncizarSans-Regular.otf);
+}
+//Version bold de la fuente
+@font-face {
+  font-family: "AncizarSans Bold";
+  src: url(../fonts/AncizarSans-Bold.otf);
+}
+//Version bold italic de la fuente
+@font-face {
+  font-family: "AncizarSans Bold Italic";
+  src: url(../fonts/AncizarSans-ExtraboldItalic.otf);
+}
+@import "../scss/vars.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+h1,
+h2 {
+  font-family: $boldFont;
+}
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: $regularFont;
+}
+
+@import "../scss/navbar.scss";
+@import "../scss/banner.scss";
+@import "../scss/secMain.scss";
